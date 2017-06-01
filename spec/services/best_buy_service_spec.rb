@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.desribe BestBuyService do
+RSpec.describe BestBuyService do
   context '#find_by_zip' do
     it 'returns raw data in json' do
       service = BestBuyService.new
