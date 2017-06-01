@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show]
   resources :users,  only: [:index, :show]
 
-  namespace :api do
+  namespace :api, constraints: { format: 'json' }  do
     namespace :v1 do
-      resources :items, only: [:index]
+      resources :items, only: [:index, :show, :destroy]
     end
   end
 end

@@ -6,17 +6,54 @@ RSpec.describe 'Items Api' do
 
     get '/api/v1/items'
 
-    expect(response).to be_succes
+    expect(response).to be_success
+    expect(response).to have_http_status(200)
 
     items = JSON.parse(response.body, symbolize_names: true)
     first_item = items.first
 
     expect(items.count).to eq(3)
+    expect(first_item).to have_key(:id)    
     expect(first_item).to have_key(:name)
     expect(first_item).to have_key(:description)
     expect(first_item).to have_key(:image_url)
     expect(first_item).to_not have_key(:created_at)
     expect(first_item).to_not have_key(:updated)
+  end
+
+  it 'can find and return one item by id' do
+    id = create(:item).id
+
+    get "/api/v1/items/#{id}"
+    expect(response).to be_success
+    expect(response).to have_http_status(200)
+
+    item = JSON.parse(response.body, symbolize_names: true)
+
+    expect(item[:id]).to eq(id)
+  end
+
+  it 'can delete a request' do
+    id = create(:item).id
+    expect(Item.count).to eq(1)
+
+    delete "/api/v1/items/#{id}"
+
+    expect(response).to be_success
+    expect(response).to have_http_status(204)
+
+    expect(Item.count).to eq(0)
+  end
+
+  it 'can create an item' do
+    item_params = { name: 'new_item',
+                    description: 'its a new item',
+                    image_url: 'www.google.com' }
+
+    post '/api/v1/items', params: item_params
+
+    expect(response).to be_success
+    expect(response).to have_http_status(201)
   end
 end
 
