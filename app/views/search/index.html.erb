@@ -1,9 +1,9 @@
 <h1>Nearby Stores</h1>
 
-<p class="results-count"><%= @result_count %> Total Stores</p>
+<p class="results-count"><%= @search_results.total %> Total Stores</p>
 
 <div class='stores'>
-  <% @stores.each do |store| %>
+  <% @search_results.stores.each do |store| %>
   <ul class='store'>
     <li class='long-name'><%= store.name %></li>
     <li class='city'>City: <%= store.city %></li>

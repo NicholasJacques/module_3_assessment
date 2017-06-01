@@ -42,4 +42,4 @@ end
 # And I should see exactly 10 results
 # And I should see the long name, city, distance, phone number and store type for each of the 10 results
 
-# https://api.bestbuy.com/v1/stores(area(80202,25))?format=json&show=all&apiKey=tq72hpvtbbd4mue6f23kmsw2
+# 
