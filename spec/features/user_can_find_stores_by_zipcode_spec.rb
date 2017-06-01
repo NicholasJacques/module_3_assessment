@@ -3,31 +3,32 @@ require 'rails_helper'
 RSpec.feature 'User can find stores by zipcode' do
   context 'with a valid zipcode' do
     it 'returns the 10 nearest stores to that zipcode' do
-      visit '/'
+      VCR.use_cassette('features/search_by_zip') do
+        visit '/'
 
-      fill_in :search, with: "80202"
-      click_on 'Locate'
+        fill_in :search, with: "80202"
+        click_on 'Locate'
 
-      expect(current_path).to eq('/search')
+        expect(current_path).to eq('/search')
 
-      within('.results-count') do
-        expect(page).to have_content("16 Total Stores")
+        within('.results-count') do
+          expect(page).to have_content("16 Total Stores")
+        end
+
+        expect(page).to have_selector('.stores')
+
+        within('.stores') do
+          expect(page).to have_selector('.store', count: 10)
+        end
+
+        within first('.store') do
+          expect(page).to have_selector('.long-name')
+          expect(page).to have_selector('.city')
+          expect(page).to have_selector('.distance')
+          expect(page).to have_selector('.phone')
+          expect(page).to have_selector('.store-type')
+        end
       end
-
-      expect(page).to have_selector('.stores')
-
-      within('.stores') do
-        expect(page).to have_selector('.store', count: 10)
-      end
-
-      within first('.store') do
-        expect(page).to have_selector('.long-name')
-        expect(page).to have_selector('.city')
-        expect(page).to have_selector('.distance')
-        expect(page).to have_selector('.phone')
-        expect(page).to have_selector('.store-type')
-      end
-
     end
   end
 end

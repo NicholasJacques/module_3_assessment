@@ -1,0 +1,150 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bestbuy.com/v1/stores(area(80202,25))?apiKey=<API_KEY>&format=json&show=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3628800'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 01 Jun 2017 17:05:26 GMT
+      Server:
+      - Best Buy Public APIs
+      X-Cache-Hit:
+      - 'true'
+      Content-Length:
+      - '20334'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":10,"currentPage":1,"total":16,"totalPages":2,"queryTime":"0.027","totalTime":"0.052","partial":false,"canonicalUrl":"/v1/stores(area(\"80202\",25))?show=all&format=json&apiKey=<API_KEY>","stores":[{"storeId":2740,"storeType":"Mobile
+        SAS","tradeIn":null,"name":"CHERRY CREEK MALL","longName":"BEST BUY MOBILE
+        - CHERRY CREEK SHOPPING CENTER","address":"3000 EAST FIRST AVE","address2":"STE
+        296","city":"DENVER","region":"CO","fullPostalCode":"80206-5637","country":"US","lat":39.72,"lng":-104.95,"hours":"Sun:
+        11-6; Mon: 10-6; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9;
+        Sun: 11-6; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9","hoursAmPm":"Sun:
+        11am-6pm; Mon: 10am-6pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri:
+        10am-9pm; Sat: 10am-9pm; Sun: 11am-6pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed:
+        10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm","gmtOffset":-6,"services":[{"service":"Trade-In"}],"phone":"303-270-9189","postalCode":"80206","distance":3.45,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"11:00","close":"18:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"18:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"21:00"},{"day":"Sunday","date":"2017-06-04","open":"11:00","close":"18:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"21:00"}]},{"storeId":1224,"storeType":"Big
+        Box","tradeIn":null,"name":"BELMAR CO","longName":"BEST BUY - BELMAR","address":"384
+        S WADSWORTH BLVD","address2":"","city":"LAKEWOOD","region":"CO","fullPostalCode":"80226-3102","country":"US","lat":39.71,"lng":-105.08,"hours":"Sun:
+        10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9;
+        Sun: 10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9","hoursAmPm":"Sun:
+        10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri:
+        10am-9pm; Sat: 10am-9pm; Sun: 10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed:
+        10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm","gmtOffset":-6,"services":[{"service":"Geek
+        Squad Services"},{"service":"Car and GPS Install Services"},{"service":"Microsoft
+        Windows Store"},{"service":"Samsung Entertainment Experience"},{"service":"Samsung
+        Experience"},{"service":"Trade-In"}],"phone":"303-742-8039","postalCode":"80226","distance":5.31,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"21:00"},{"day":"Sunday","date":"2017-06-04","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"21:00"}]},{"storeId":211,"storeType":"Big
+        Box","tradeIn":null,"name":"COLORADO BLVD CO","longName":"BEST BUY - COLORADO
+        BLVD","address":"4100 E MEXICO AVE","address2":"STE A","city":"DENVER","region":"CO","fullPostalCode":"80222-4100","country":"US","lat":39.69,"lng":-104.94,"hours":"Sun:
+        10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9;
+        Sun: 10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9","hoursAmPm":"Sun:
+        10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri:
+        10am-9pm; Sat: 10am-9pm; Sun: 10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed:
+        10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm","gmtOffset":-6,"services":[{"service":"Apple
+        Authorized Service Provider"},{"service":"Apple Shop"},{"service":"Camera
+        Experience Shop"},{"service":"Geek Squad Services"},{"service":"Car and GPS
+        Install Services"},{"service":"LG Experience"},{"service":"Magnolia Home Theater"},{"service":"Microsoft
+        Windows Store"},{"service":"Pacific Kitchen and Home Inside Best Buy"},{"service":"Samsung
+        Entertainment Experience"},{"service":"Samsung Experience"},{"service":"Sony
+        Experience"},{"service":"Trade-In"}],"phone":"303-758-5805","postalCode":"80222","distance":5.59,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"21:00"},{"day":"Sunday","date":"2017-06-04","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"21:00"}]},{"storeId":382,"storeType":"Big
+        Box","tradeIn":null,"name":"DENVER WEST CO","longName":"BEST BUY - DENVER
+        WEST","address":"1400 DENVER WEST BLVD","address2":"","city":"LAKEWOOD","region":"CO","fullPostalCode":"80401-3222","country":"US","lat":39.74,"lng":-105.15,"hours":"Sun:
+        10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9;
+        Sun: 10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9","hoursAmPm":"Sun:
+        10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri:
+        10am-9pm; Sat: 10am-9pm; Sun: 10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed:
+        10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm","gmtOffset":-6,"services":[{"service":"Apple
+        Shop"},{"service":"Geek Squad Services"},{"service":"Car and GPS Install Services"},{"service":"LG
+        Experience"},{"service":"Magnolia Home Theater"},{"service":"Microsoft Windows
+        Store"},{"service":"Samsung Entertainment Experience"},{"service":"Samsung
+        Experience"},{"service":"Samsung Open House"},{"service":"Trade-In"}],"phone":"303-273-5617","postalCode":"80401","distance":8.39,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"21:00"},{"day":"Sunday","date":"2017-06-04","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"21:00"}]},{"storeId":209,"storeType":"Big
+        Box","tradeIn":null,"name":"WESTMINSTER CO","longName":"BEST BUY - WESTMINSTER","address":"9369
+        SHERIDAN BLVD","address2":"WESFIELD VILLAGE CENTER","city":"WESTMINSTER","region":"CO","fullPostalCode":"80031-6531","country":"US","lat":39.87,"lng":-105.06,"hours":"Sun:
+        10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat: 10-10;
+        Sun: 10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat:
+        10-10","hoursAmPm":"Sun: 10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm;
+        Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm; Sun: 10am-8pm; Mon: 10am-9pm;
+        Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm","gmtOffset":-6,"services":[{"service":"Apple
+        Authorized Service Provider"},{"service":"Alienware Experience Shop"},{"service":"Apple
+        Shop"},{"service":"Geek Squad Services"},{"service":"Car and GPS Install Services"},{"service":"LG
+        Experience"},{"service":"Magnolia Home Theater"},{"service":"Microsoft Windows
+        Store"},{"service":"Pacific Kitchen and Home Inside Best Buy"},{"service":"Samsung
+        Entertainment Experience"},{"service":"Samsung Experience"},{"service":"Sony
+        Experience"},{"service":"Trade-In"}],"phone":"303-426-4434","postalCode":"80031","distance":8.52,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"22:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"22:00"},{"day":"Sunday","date":"2017-06-04","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"22:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"22:00"}]},{"storeId":1416,"storeType":"Big
+        Box","tradeIn":null,"name":"NORTHGLENN CO","longName":"BEST BUY - NORTHGLENN","address":"104
+        W 104TH AVE","address2":"","city":"DENVER","region":"CO","fullPostalCode":"80234-4102","country":"US","lat":39.88,"lng":-104.99,"hours":"Sun:
+        10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat: 10-10;
+        Sun: 10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-10; Sat:
+        10-10","hoursAmPm":"Sun: 10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm;
+        Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm; Sun: 10am-8pm; Mon: 10am-9pm;
+        Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri: 10am-10pm; Sat: 10am-10pm","gmtOffset":-6,"services":[{"service":"Apple
+        Authorized Service Provider"},{"service":"Apple Shop"},{"service":"Geek Squad
+        Services"},{"service":"Car and GPS Install Services"},{"service":"LG Experience"},{"service":"Microsoft
+        Windows Store"},{"service":"Samsung Entertainment Experience"},{"service":"Samsung
+        Experience"},{"service":"Sony Experience"},{"service":"Trade-In"}],"phone":"303-252-8677","postalCode":"80234","distance":9.14,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"22:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"22:00"},{"day":"Sunday","date":"2017-06-04","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"22:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"22:00"}]},{"storeId":2730,"storeType":"Mobile
+        SAS","tradeIn":null,"name":"TOWN CENTER AURORA","longName":"BEST BUY MOBILE
+        - TOWN CENTER AT AURORA","address":"14200 E ALAMEDA AVE","address2":"SPC #2011","city":"AURORA","region":"CO","fullPostalCode":"80012-2508","country":"US","lat":39.71,"lng":-104.82,"hours":"Sun:
+        11-6; Mon: 10-6; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9;
+        Sun: 11-6; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9","hoursAmPm":"Sun:
+        11am-6pm; Mon: 10am-6pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri:
+        10am-9pm; Sat: 10am-9pm; Sun: 11am-6pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed:
+        10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm","gmtOffset":-6,"services":[{"service":"Trade-In"}],"phone":"303-326-0848","postalCode":"80012","distance":9.73,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"11:00","close":"18:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"18:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"21:00"},{"day":"Sunday","date":"2017-06-04","open":"11:00","close":"18:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"21:00"}]},{"storeId":217,"storeType":"Big
+        Box","tradeIn":null,"name":"AURORA CO","longName":"BEST BUY - AURORA","address":"13801
+        E MISSISSIPPI AVE","address2":"","city":"AURORA","region":"CO","fullPostalCode":"80012-3691","country":"US","lat":39.70,"lng":-104.83,"hours":"Sun:
+        10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9;
+        Sun: 10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9","hoursAmPm":"Sun:
+        10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri:
+        10am-9pm; Sat: 10am-9pm; Sun: 10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed:
+        10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm","gmtOffset":-6,"services":[{"service":"Geek
+        Squad Services"},{"service":"Car and GPS Install Services"},{"service":"LG
+        Experience"},{"service":"Microsoft Windows Store"},{"service":"Samsung Entertainment
+        Experience"},{"service":"Samsung Experience"},{"service":"Sony Experience"},{"service":"Samsung
+        Open House"},{"service":"Trade-In"}],"phone":"303-338-5797","postalCode":"80012","distance":9.79,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"21:00"},{"day":"Sunday","date":"2017-06-04","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"21:00"}]},{"storeId":210,"storeType":"Big
+        Box","tradeIn":null,"name":"LITTLETON CO","longName":"BEST BUY - LITTLETON","address":"5395
+        S WADSWORTH BLVD","address2":"","city":"LAKEWOOD","region":"CO","fullPostalCode":"80123-2229","country":"US","lat":39.62,"lng":-105.09,"hours":"Sun:
+        10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9;
+        Sun: 10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9","hoursAmPm":"Sun:
+        10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri:
+        10am-9pm; Sat: 10am-9pm; Sun: 10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed:
+        10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm","gmtOffset":-6,"services":[{"service":"Geek
+        Squad Services"},{"service":"Car and GPS Install Services"},{"service":"LG
+        Experience"},{"service":"Magnolia Design Center"},{"service":"Microsoft Windows
+        Store"},{"service":"Samsung Entertainment Experience"},{"service":"Samsung
+        Experience"},{"service":"Sony Experience"},{"service":"Trade-In"}],"phone":"303-932-7830","postalCode":"80123","distance":10.44,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"21:00"},{"day":"Sunday","date":"2017-06-04","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"21:00"}]},{"storeId":1171,"storeType":"Big
+        Box","tradeIn":null,"name":"SOUTHGLENN CO","longName":"BEST BUY - SOUTHGLENN","address":"6707
+        S VINE ST","address2":"STE D","city":"CENTENNIAL","region":"CO","fullPostalCode":"80122-3171","country":"US","lat":39.59,"lng":-104.97,"hours":"Sun:
+        10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9;
+        Sun: 10-8; Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9","hoursAmPm":"Sun:
+        10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed: 10am-9pm; Thurs: 10am-9pm; Fri:
+        10am-9pm; Sat: 10am-9pm; Sun: 10am-8pm; Mon: 10am-9pm; Tue: 10am-9pm; Wed:
+        10am-9pm; Thurs: 10am-9pm; Fri: 10am-9pm; Sat: 10am-9pm","gmtOffset":-6,"services":[{"service":"Apple
+        Shop"},{"service":"Geek Squad Services"},{"service":"Car and GPS Install Services"},{"service":"Trade-In"}],"phone":"303-797-3246","postalCode":"80122","distance":11.02,"detailedHours":[{"day":"Sunday","date":"2017-05-28","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-05-29","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-05-30","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-05-31","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-01","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-02","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-03","open":"10:00","close":"21:00"},{"day":"Sunday","date":"2017-06-04","open":"10:00","close":"20:00"},{"day":"Monday","date":"2017-06-05","open":"10:00","close":"21:00"},{"day":"Tuesday","date":"2017-06-06","open":"10:00","close":"21:00"},{"day":"Wednesday","date":"2017-06-07","open":"10:00","close":"21:00"},{"day":"Thursday","date":"2017-06-08","open":"10:00","close":"21:00"},{"day":"Friday","date":"2017-06-09","open":"10:00","close":"21:00"},{"day":"Saturday","date":"2017-06-10","open":"10:00","close":"21:00"}]}],"warnings":"Distances
+        are in terms of miles (default)"}'
+    http_version: 
+  recorded_at: Thu, 01 Jun 2017 17:06:51 GMT
+recorded_with: VCR 3.0.3

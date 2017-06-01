@@ -20,10 +20,12 @@ RSpec.describe Store do
   end
 
   it '.find_by_zip' do
-    results = Store.find_by_zip("80202")
+    VCR.use_cassette('models/store/find_by_zip') do
+      results = Store.find_by_zip("80202")
 
-    expect(results).to be_a(SearchPresenter)
-    expect(results.stores.count).to eq(10)
-    expect(results.total).to be(16)
+      expect(results).to be_a(SearchPresenter)
+      expect(results.stores.count).to eq(10)
+      expect(results.total).to be(16)
+    end
   end
 end
