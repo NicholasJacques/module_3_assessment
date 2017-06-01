@@ -29,6 +29,7 @@ group :development, :test do
   gem "pry", :require => "pry"
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'awesome_print'
 end
 
 group :development do
