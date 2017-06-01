@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature 'User can find stores by zipcode' do
-  context 'with a valid zipcode' do
+  xcontext 'with a valid zipcode' do
     it 'returns the 10 nearest stores to that zipcode' do
       visit '/'
 
