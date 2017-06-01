@@ -1,8 +1,8 @@
 class SearchPresenter
-  attr_reader :stores
+  attr_reader :stores, :total
 
-  def initialize(zip)
-    @stores = Store.find_by_zip(zip)
-    # @total = Store.total_results
+  def initialize(stores, total)
+    @stores = stores
+    @total = total
   end
 end

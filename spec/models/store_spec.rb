@@ -20,11 +20,10 @@ RSpec.describe Store do
   end
 
   it '.find_by_zip' do
-    stores = Store.find_by_zip("80202")
-    first_store = stores.first
+    results = Store.find_by_zip("80202")
 
-    expect(stores).to be_an(Array)
-    expect(stores.count).to eq(10)
-    expect(first_store).to be_a(Store)
+    expect(results).to be_a(SearchPresenter)
+    expect(results.stores.count).to eq(10)
+    expect(results.total).to be(16)
   end
 end
