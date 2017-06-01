@@ -14,4 +14,13 @@ class Api::V1::ItemsController < ApplicationController
     render status: 204, json: Item.delete(params[:id])
   end
 
+  def create
+    render status: 201, json: Item.create(item_params)
+  end
+
+private
+
+  def item_params
+    params.require(:item).permit(:name, :description, :image_url)
+  end
 end

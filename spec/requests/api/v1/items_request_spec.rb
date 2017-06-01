@@ -46,14 +46,26 @@ RSpec.describe 'Items Api' do
   end
 
   it 'can create an item' do
+    expect(Item.count).to eq(0)
     item_params = { name: 'new_item',
                     description: 'its a new item',
                     image_url: 'www.google.com' }
 
-    post '/api/v1/items', params: item_params
+    post '/api/v1/items', item: item_params
 
     expect(response).to be_success
     expect(response).to have_http_status(201)
+    expect(Item.count).to eq(1)
+    expect(Item.last.name).to eq(item_params[:name])
+
+    item = JSON.parse(response.body, symbolize_names: true)
+
+    expect(item[:id]).to eq(Item.last.id)
+    expect(item[:name]).to eq(item_params[:name])
+    expect(item[:description]).to eq(item_params[:description])
+    expect(item[:image_url]).to eq(item_params[:image_url])
+    expect(item).to_not have_key(:created_at)
+    expect(item).to_not have_key(:updated)
   end
 end
 
