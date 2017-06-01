@@ -18,4 +18,13 @@ RSpec.describe Store do
     expect(store.phone).to eq('281-330-8004')
     expect(store.distance).to eq(3.45)
   end
+
+  it '.find_by_zip' do
+    stores = Store.find_by_zip("80202")
+    first_store = stores.first
+
+    expect(stores).to be_an(Array)
+    expect(stores.count).to eq(10)
+    expect(first_store).to be_a(Store)
+  end
 end
